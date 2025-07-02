@@ -1,0 +1,42 @@
+Algorithm 1: Find Largest Number
+
+While number_entered is not equal to zero:
+    prompt user to "Enter positive number? (ends with 0[zero])
+    if number_entered > largest_number:
+        largest_number is equal to number_entered
+    else When number_enters == 0:
+        print(largest_number)
+
+Algorithm 2: Greet User
+
+prompt "Enter your name? " and store first_name
+print "Hello, Wolrd! + first_name
+
+Algorithm 3: Calculate Arithmetic Average
+
+prompt "Enter integers one by one (type DONE to finish): "
+
+if Done is entered:
+    Calculate the average of the average number of all numbers entered
+else:
+    add number to list 
+    add total amount of enteries
+
+
+Algorithm 4: Grocery List
+
+prompt "Enter your grocery list "
+
+for each item in the list sort in alphabetical order
+print out items in alphabetical order 
+
+
+Algorithm 5: Flowchart Translation
+
+Read input X and Read input Y
+
+print S which is X + Y
+
+print A which is S divided /2
+
+print P which is X *times Y 

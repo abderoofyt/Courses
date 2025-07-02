@@ -1,0 +1,83 @@
+#get input
+arrow_size = int(input("Enter the size of the Arrow? ")) 
+
+#Placeholders 
+arrow = []
+arrow_string = arrow_string2 = ""
+
+#Counter for each iteration to the center of the arrow
+counter = 1
+
+##STEP 1
+##iterates throught the around and prints a star for each iteration till we get the arrow_size target: e.g: 3 = ***
+# for counter in range(arrow_size):
+#     print("*")
+
+##STEP 2
+##iterates for each range but adds each line, until it gets to the arrow: e.g if 3 = *, ** and ***
+# for i in range(arrow_size):
+#     arrow.append("*")
+# print("".join(arrow))
+
+##STEP 3
+##iterates the reverse part for each line: e.g. if 3 = ***, ** and * 
+
+# while arrow_size > 0:
+#     new_arrow = []
+#     for i in range(arrow_size):
+#         new_arrow.append("*")
+#     print("".join(new_arrow))
+#     arrow_size -= 1
+
+
+##ONE LOOP IF POSSIBLE
+##STEP 1 : Combine front and back into 1: e.g: 3 = *, **, *** and ***, **, *
+
+##loop to arrow
+##loop from arrow
+
+# arrow_string = ""  
+# arrow_string2 = ""  
+
+# while counter <= arrow_size:
+#     first_arrow = []
+#     last_arrow = []
+    
+#     for i in range(counter):
+#         first_arrow.append("*")
+#         last_arrow.append("*")
+
+#     arrow_string += ''.join(first_arrow) + "\n"  # Store each row in the top half
+#     arrow_string2 = ''.join(last_arrow) + "\n" + arrow_string2  # Store bottom half
+
+#     counter += 1
+
+# # Print later when needed
+# print(arrow_string) 
+# print(arrow_string2)  
+
+
+## Step 2: Remove duplicate middle:
+# l = 1
+# arrow_string = arrow_string2 = ""
+
+# while l < arrow_size:
+#     first_arrow = []
+#     last_arrow = []
+
+#     for i in range(l):
+#         first_arrow.append("*")
+#         last_arrow.append("*")
+
+#     if l == arrow_size - 1: 
+#         arrow_string += ''.join(first_arrow) 
+#         arrow_string2 = ''.join(last_arrow) + "\n" + arrow_string2 
+#     else:
+#         arrow_string += ''.join(first_arrow) + "\n" 
+#         arrow_string2 = ''.join(last_arrow) + "\n" + arrow_string2 
+
+#     l += 1
+
+# print(arrow_string)
+# print("*" * arrow_size)
+# print(arrow_string2) 

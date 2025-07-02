@@ -1,0 +1,19 @@
+User Overview Report
+--------------------
+Total users: 2
+Total tasks: 2
+
+Username: admin
+  Total tasks assigned: 2
+  % of total tasks assigned: 100.00%
+  % completed: 0.00%
+  % uncompleted: 0.00%
+  % overdue (and uncompleted): 0.00%
+
+Username: junaid
+  Total tasks assigned: 0
+  % of total tasks assigned: 0.00%
+  % completed: 0.00%
+  % uncompleted: 0.00%
+  % overdue (and uncompleted): 0.00%
+

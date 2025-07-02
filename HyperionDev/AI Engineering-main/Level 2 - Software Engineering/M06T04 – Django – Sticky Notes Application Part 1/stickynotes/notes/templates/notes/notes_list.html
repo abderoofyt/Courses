@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Notes</title>
+</head>
+<body>
+    <h1>Sticky Notes</h1>
+    <a href="{% url 'add_note' %}">Add Note</a>
+    <ul>
+        {% for note in notes %}
+            <li>
+                <h3>{{ note.title }}</h3>
+                <p>{{ note.content }}</p>
+                <small>{{ note.created_at }}</small>
+            </li>
+        {% empty %}
+            <li>No notes yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

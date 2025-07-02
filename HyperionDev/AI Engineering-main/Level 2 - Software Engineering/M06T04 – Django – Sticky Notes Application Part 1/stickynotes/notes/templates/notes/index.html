@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Notes</title>
+</head>
+<body>
+    <h1>Sticky Notes</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Note</button>
+    </form>
+
+    <hr>
+
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.content }} <small>({{ note.created_at }})</small></li>
+        {% empty %}
+            <li>No notes yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
